@@ -1,0 +1,132 @@
+body {
+  font-family: Arial;
+}
+.cart__products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* #1  */
+  justify-content: flex-start;
+  /* flex-direction: column; */
+  align-items: flex-start;
+}
+
+.cart__product {
+  position: relative;
+
+  /* #1  */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 200px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+.cart__product-count {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 2px solid green;
+  border-radius: 50%;
+  padding: 2px 5px;
+
+  /* #1  */
+  margin-right: 10px;
+}
+
+.cart__product-image {
+  border-radius: 6px;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* #1  new container */
+.cart__product-details {
+  display: flex;
+  align-items: center;
+}
+
+/* #1 */
+.cart__product-remove {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+/* #1 */
+.cart__product-remove:hover {
+  background-color: darkred;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.product__title {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.product__image {
+  width: 100px;
+  object-fit: contain;
+}
+
+.product__quantity-title {
+  text-transform: uppercase;
+}
+
+.product__quantity-controls {
+  display: flex;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__quantity-control {
+  padding: 5px 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid gray;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.product__quantity-control:hover {
+  background: gray;
+  color: #fff;
+}
+
+.product__quantity-value {
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.product__add {
+  background: green;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product__add:hover {
+  opacity: 0.8;
+}
+
+.product-shadow {
+  position: absolute;
+}
